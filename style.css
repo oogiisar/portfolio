@@ -74,6 +74,10 @@ main {
   color: white;
 }
 
+img {
+  max-width: 60%;
+}
+
 #l1 {
   display: inline-block;
 }
