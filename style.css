@@ -1,13 +1,12 @@
 * {
     box-sizing: border-box;
-  }
+}
   
 body {
   font-family: 'Helvetica',
   'sans-serif'; 
   font-size: 16px;
-  color: #444;
-  line-height: 1.2;
+  line-height: 1.4;
   margin: 0;
 }
 
@@ -40,6 +39,10 @@ nav ul li:hover  {
   cursor: pointer;
 }
 
+a {
+  color: white;
+}
+
 a:visited {
   color: white;
 }
@@ -63,79 +66,53 @@ h1 {
 }
 
 main {
-    padding-top: 45px;
-    background-color: rgb(9, 31, 43);
+  padding-top: 12px;
+  background-color: rgb(9, 31, 43);
 }
 
 .container {
   display: inline-block;
   min-height: 95vh;
-  padding: 10% 10px;
+  padding: 10vh 10px 0 10px;
   color: white;
- 
+  width: 100%;
 }
 
 img {
-  max-width: 60%;
-  margin-right: 20%;
-  margin-left: 20%;
+  max-width: 40%;
 }
 
-#l1 {
-  display: inline-block;
+.word_cloud {
+  line-height: 2;
 }
 
-#l1 span:nth-child(1) {
-  color: rgb(97, 59, 187);
-  margin-left: 22%;
+.project {
+  text-align: center;
 }
 
-#l1 span:nth-child(2) {
-  color: blue;
-  margin-left: 36%
+.project img:hover {
+  animation: hoverEffect 0.5s forwards;
 }
 
-#l2 span:nth-child(1) {
-  color: red;
-  margin-left: 31%;
-  font-size: 10px;
+@keyframes hoverEffect {
+  from {filter: drop-shadow(0px 0px 0px green);}
+  to {filter: drop-shadow(8px 8px 10px green);}
 }
 
-#l2 span:nth-child(2) {
-  color: orange;
-  margin-left: 35%;
-  font-size: 18px;
-  opacity: 0.5;
+.portfolio p:nth-child(2) {
+  text-align: center;
+  margin-top: 8vh;
 }
 
-#l3 span:nth-child(1) {
-  color: lightblue;
-  margin-left: 23%;
-  opacity: .8;
+.cloud {
+  margin-top: 8vh;
+  text-align: center;
 }
 
-#l3 span:nth-child(2) {
-  color: green;
-  margin-left: 33%;
-  font-size: 12px;
+.contact p {
+  margin-top: 20vh;
+  text-align: center;
 }
-
-#l4 span:nth-child(1) {
-  color: tomato;
-  margin-left: 31%;
- opacity: .5;
-}
-#l5 span:nth-child(1){
-  color: rgb(204, 187, 39);
-  margin-left: 25%;
-}
-#l5 span:nth-child(2) {
-  color: rgb(114, 108, 197);
-  margin-left: 30%;
-  font-size: 11px;
-
-}
-
 
 #copyright {
   font-size: 14px;
@@ -145,14 +122,16 @@ img {
   body {
     font-size: 20px;
   }
+
   h1 {
     font-size: 22px;
   }
+
   nav {
       right: auto;
       bottom: 0;
   }
-
+  
   .nav_foot ul li {
     display: block;
     margin-top: 20px;
@@ -166,16 +145,19 @@ img {
     display: block;
    
   }
-  .nav_foot ul li:nth-child(4){
+
+  .nav_foot ul li:nth-child(5){
     position: absolute;
     bottom: 80px;
   }
-  .nav_foot ul li:nth-child(n+5){
+
+  .nav_foot ul li:nth-child(n+6){
     position: absolute;
     display: inline-block;
     bottom: 40px;
   }
-  .nav_foot ul li:nth-child(6){
+
+  .nav_foot ul li:nth-child(7){
     margin-left: 30px;
   }
 
@@ -185,19 +167,22 @@ img {
   }
   
   .container {
-      height: 100vh;
+      min-height: 100vh;
       padding-top: 20px;
       margin-left: 20px;
       margin-right: 10px;
-    }
+      width: 95%;
+  }
 
   footer{
       display: none;
   }
+
   #copyright {
     left: 20px;
     text-decoration: none;
   }
+
   #copyright:hover {
     font-weight: unset;
     cursor: auto;
