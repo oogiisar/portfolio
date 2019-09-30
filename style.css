@@ -3,8 +3,7 @@
 }
   
 body {
-  font-family: 'Helvetica',
-  'sans-serif'; 
+  font-family: 'Helvetica', 'sans-serif'; 
   font-size: 16px;
   line-height: 1.4;
   margin: 0;
@@ -12,7 +11,6 @@ body {
 
 .nav_foot {
   padding: 10px 0;
-  background-color: #aaa;
   color: white;
   background-color: rgb(18, 62, 85);
 }
@@ -23,6 +21,10 @@ body {
 
 .nav_foot ul li {
   display: inline-block;
+}
+
+.icon {
+  display: none;
 }
 
 nav {
@@ -59,6 +61,14 @@ a:visited {
 
 .nav_foot .footer_data {
   display: none;
+}
+
+#me {
+  text-align: center;
+}
+
+#me img {
+  max-width: 30%;
 }
 
 h1 {
@@ -157,8 +167,16 @@ img {
     bottom: 40px;
   }
 
+  .nav_foot ul li:nth-child(6){
+    margin-left: -20px;
+  }
+
   .nav_foot ul li:nth-child(7){
-    margin-left: 30px;
+    padding-left: 20px;
+  }
+
+  .nav_foot ul li:nth-child(8){
+    padding-left: 60px;
   }
 
   main {
@@ -186,5 +204,43 @@ img {
   #copyright:hover {
     font-weight: unset;
     cursor: auto;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  li.hidden.nav_portfolio, li.hidden.nav_bio, li.hidden.nav_contact {
+    display: none;
+  }
+
+  li.menu.nav_portfolio, li.menu.nav_bio, li.menu.nav_contact {
+    position: absolute;
+    text-align: left;
+    right: 40px;
+    width: 120px;
+    background: rgb(9, 31, 43);
+    padding: 10px;
+    border-right: 2px solid rgb(113, 195, 237);
+    border-left: 2px solid rgb(113, 195, 237);
+  }
+
+  li.menu.nav_bio {
+    top: 50px;
+    border-top: 2px solid rgb(113, 195, 237);
+  }
+
+  li.menu.nav_portfolio {
+    top: 80px;
+  }
+
+  li.menu.nav_contact  {
+    top: 110px;
+    border-bottom: 2px solid rgb(113, 195, 237);
+  }
+
+  .icon {
+    float: right;
+    display: block;
+    margin: 15px 40px 0px 0px;
+    outline: 0;
   }
 }

@@ -11,18 +11,23 @@
 </head>
 <body>
     <nav role="navigation" class="nav_foot">
+        <a href="javascript:void(0);" class="icon" onclick="hideMenu()">
+            <i class="fa fa-bars"></i>
+        </a>
         <ul>
             <li class="menu nav_oogii">Oogii</li>
-            <li class="menu nav_bio active">Bio</li>
-            <li class="menu nav_portfolio">Portfolio</li>
-            <li class="menu nav_contact">Contact</li>
+            <li class="menu nav_bio active hidden">Bio</li>
+            <li class="menu nav_portfolio hidden">Portfolio</li>
+            <li class="menu nav_contact hidden">Contact</li>
             <li class="footer_data" id="copyright">&copy; Oogii 2019</li>
             <li class="footer_data"><a href="https://github.com/oogiisar/" target="_blank"><i class="fab fa-github-alt"></i></a></li>
             <li class="footer_data"><a href="https://www.linkedin.com/in/oyungerel-gerelmend-4027b9125/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+            <li class="footer_data"><a href="mailto:oogiisar@gmail.com"><i class="fas fa-envelope"></i></a></li>
         </ul>
     </nav>
     <main role="main">
         <section class="container bio">
+            <p id="me"><img src="img/profilePic.jpg" alt="It is me Oogii!"></p>
             <h1>Hi, I am Oogii. I am a front end development student at Thinkful.</h1>
             <p> 
                 I grew up in a small town in the very cold country of Mongolia. I am proud to have a different background and life experiences than others. My unique culture and experiences make me who I am and gives a different perspective. I was raised in a nomadic lifestyle without technology. When I immigrated to America it gave me a great opportunity to start my new life in the tech field. I am very happy to become a woman developer and become a role model for the young generation in my country, especially girls. No matter where you come from, if you work hard you can accomplish your goals. Since I have come to America I have learned this lesson. I am also a marathon runner. This skill has taught me patience, self-discipline, and persistence.
@@ -36,6 +41,7 @@
         </section>
         <section class="container contact">
                 <p>You can contact me anytime just click the link <a href="mailto:oogiisar@gmail.com">Oogii</a></p>
+                <p>Or check out my <a href="https://www.linkedin.com/in/oyungerel-gerelmend-4027b9125/" target="_blank">LinkedIn</a> and <a href="https://github.com/oogiisar/" target="_blank">Github</a></p>
         </section>
     </main>
     <footer role="content-info" class="nav_foot">
@@ -43,6 +49,7 @@
             <li id="copyright">&copy; Oogii 2019</li>
             <li><a href="https://github.com/oogiisar/" target="_blank"><i class="fab fa-github-alt"></i></a></li>
             <li><a href="https://www.linkedin.com/in/oyungerel-gerelmend-4027b9125/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="mailto:oogiisar@gmail.com"><i class="fas fa-envelope"></i></a></li>
         </ul>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

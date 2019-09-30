@@ -64,4 +64,23 @@ function scroll(){
     });
 }
 
-$(scroll);
+function hideMenu(){
+    $("li.menu.nav_portfolio").toggleClass("hidden");
+    $("li.menu.nav_bio").toggleClass("hidden");
+    $("li.menu.nav_contact").toggleClass("hidden");
+}
+
+function menuHideBody() {
+    $(".container").on('click', function(event){
+        $("li.menu.nav_portfolio").addClass("hidden");
+        $("li.menu.nav_bio").addClass("hidden");
+        $("li.menu.nav_contact").addClass("hidden");
+    });
+}
+
+function pageListner() {
+    scroll();
+    menuHideBody();
+}
+
+$(pageListner);
