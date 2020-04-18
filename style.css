@@ -63,6 +63,14 @@ a:visited {
   display: none;
 }
 
+.tech{
+  margin-bottom: 5px;
+}
+
+ul {
+  list-style: none;
+}
+
 #me {
   text-align: center;
 }
@@ -73,6 +81,10 @@ a:visited {
 
 h1 {
   font-size: 18px;
+}
+
+hr {
+  border-color: rgba(255, 255, 255, .2);
 }
 
 main {
@@ -98,6 +110,11 @@ img {
 
 .project {
   text-align: center;
+  margin: 10px 0;
+}
+
+.portfolio h3 {
+  text-align: center;
 }
 
 .project img:hover {
@@ -111,7 +128,7 @@ img {
 
 .portfolio p:nth-child(2) {
   text-align: center;
-  margin-top: 8vh;
+  margin-top: 10px;
 }
 
 .cloud {
@@ -124,7 +141,7 @@ img {
   text-align: center;
 }
 
-#copyright {
+.copyright {
   font-size: 14px;
 }
 
